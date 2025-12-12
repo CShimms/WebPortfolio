@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <h2>Documentation Menu </h2>
+    <a href="intro.htm">Introduction</a>
+    <a href="setup.htm">Getting Started</a>
+    <a href="syntax.htm">Syntax Overview</a>
+    <a href="examples.htm">Code Examples</a>
+    <a href="tips.htm">Best Practices</a>
+  </nav>
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>This technical documentation provides an overview of how to use and structure your code for better readability and performance. It covers best practices, syntax standards, and examples for modern web development.</p>
+    </section>
+    <section id="setup">
+      <h2>Getting Started</h2>
+      <p>Before you begin, ensure you have a basic text editor and a modern web browser installed. Familiarity with HTML and CSS is helpful for following along.</p>
+    </section>
+    <section id="syntax">
+      <h2>Syntax Overview</h2>
+      <p>HTML provides the structure of the page, while CSS styles its visual appearance. It’s important to maintain clean and semantic code for accessibility and maintainability.</p>
+    </section>
+    <section id="examples">
+      <h2>Code Examples</h2>
+      <p>Here's a simple C++ example:<br></br></p>
+      <pre><code>using namespace std;
+
+int main() {
+   int num1;
+   int num2;
+   int num3;
+   //get values
+   
+   cout << "Enter the three triangle side lengths. \n" ;
+   cout << "First side length: ";
+   cin >> num1;
+   cout << "Second side length: ";
+   cin >> num2;
+   cout << "Third side length: ";
+   cin >> num3;
+   
+   //if 1 is bigger than 2 and 3, add 2 and 3 together and compare to 1
+   //if 2 is biggest, add 1 and 3 together and compare to 2
+   //if 3 is biggest, add 1 and 2 together and compare to 1
+   if (num1 > num2) {
+      if (num1 > num3) {
+         if (num2 + num3 > num1) {
+            cout << "The side lengths " << num1 << " and " << num2 << " and " << num3 << " compose a valid triangle.";
+         } else {
+            cout << "The side lengths " << num1 << " and " << num2 << " and " << num3 << " do not compose a valid triangle.";
+         }
+      } else {
+         if (num2 + num1 > num3) {
+            cout << "The side lengths " << num1 << " and " << num2 << " and " << num3 << " compose a valid triangle.";
+         } else {
+            cout << "The side lengths " << num1 << " and " << num2 << " and " << num3 << " do not compose a valid triangle.";
+         }
+      }
+   } else if (num2 > num3) {
+      if (num1 + num3 > num2) {
+            cout << "The side lengths " << num1 << " and " << num2 << " and " << num3 << " compose a valid triangle.";
+      } else {
+            cout << "The side lengths " << num1 << " and " << num2 << " and " << num3 << " do not compose a valid triangle.";      }
+   } else {
+      if (num2 + num1 > num3) {
+            cout << "The side lengths " << num1 << " and " << num2 << " and " << num3 << " compose a valid triangle.";
+      } else {
+            cout << "The side lengths " << num1 << " and " << num2 << " and " << num3 << " do not compose a valid triangle.";
+      }
+   }
+   return 0;
+}</code></pre>
+    </section>
+    <section id="tips">
+      <h2>Best Practices</h2>
+      <p>Use comments, consistent indentation, and modular CSS. Keep your code DRY (Don't Repeat Yourself) and responsive for different devices.</p>
+    </section>
+  </main>
+  <footer style="text-align:center;">
+      © [2025] All rights reserved by Caleb Shimomura
+  </footer>
+</body>
+</html>
