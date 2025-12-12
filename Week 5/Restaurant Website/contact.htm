@@ -1,0 +1,85 @@
+<!--Filename - contact.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://media.geeksforgeeks.org/wp-content/uploads/20240711123257/jpeg-optimizer_2151336570.jpg">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="ContactUs">
+        <h1>Contact Us</h1>
+        <form action="#">
+            <div class="form-shape">
+                <label for="query">
+                    Type of Query
+                </label>
+                <select name="myQuery" id="query">
+                    <option value="sel" selected>
+                        Select
+                    </option>
+                    <option value="ord">
+                        Order-related Issues
+                    </option>
+                    <option value="Site">
+                        Site-related Issues
+                    </option>
+                    <option value="fed">
+                        Staff-related Issues
+                    </option>
+                    <option value="Toil">
+                        Toilet-related Issues
+                    </option>
+                    <option value="others">
+                        Other
+                    </option>
+                </select>
+            </div>
+            <div class="form-shape">
+                <label for="name"><br>Name:</label>
+                <input type="text" name="myName" id="name"
+                    placeholder="Enter your Name">
+            </div>
+            <div class="form-shape">
+                <label for="email"><br>Email Address:</label>
+                <input type="email" name="myEmail" id="email"
+                    placeholder="Enter your email">
+            </div>
+            <div class="form-shape">
+                <label for="pho"><br>Phone Number:</label>
+                <input type="phone" name="myPhone" id="pho"
+                    placeholder="Enter your phone number">
+            </div>
+            <div id="radio">
+                <br>Are you a member of Foodman's Restaurant?
+                Yes <input type="radio" name="eligible">
+                No <input type="radio" name="eligible">
+            </div>
+            <br>
+	    <p>Choose your favorite dish from our restaurant:</p>
+	      <form action="/action_page.php">
+  	      <input type="radio" id="html" name="fav_language" value="Spaghetti pugliese">
+  	      <label for="html">Spaghetti Pugliese</label><br>
+  	      <input type="radio" id="css" name="fav_language" value="Focaccia">
+  	      <label for="css">Focaccia</label><br>
+  	      <input type="radio" id="javascript" name="fav_language" value="Hot Dog">
+  	      <label for="javascript">Hot Dog</label><br><br>
+  	      <input type="submit" href="thankyou.htm" value="Submit">
+  	    </form> 
+            <div class="form-shape">
+                <label for="message">
+                    <br>Additional Comments:
+                </label>
+                <textarea name="mesg" id="message" cols="30" rows="10">
+				</textarea>
+            </div>
+            <input type="submit" href="thankyou.htm" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+	<a href="index.htm">Return to Home</a>
+    </div>
+</body>
+</html>

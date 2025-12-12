@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abraham Lincoln Beard Survey</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" type="image/x-icon" href="Abraham Licon.jpeg">
+</head>
+<body>
+    <h1 style="color:white;">Abraham Lincoln Opinion Form</h1>
+    <!-- Create Form -->
+    <form id="form">
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" title="Why are you checking the mouseover text???" placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">Email</label>
+            <input type="email" id="email" title="It's electronic mail. I'd be surprised if you have one you peasant." placeholder="Enter your email" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">Age</label>
+            <input type="text" id="age" title="If you're under the age of 180 your response will be ignored." placeholder="Enter your age" />
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">Which option best describes Abraham Lincoln?</label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+		<option value="talentless hack">Talentless Hack</option>
+		<option value="garbageman">Garbageman</option>
+		<option value="best dad">Best Dad</option>
+		<option value="shaman king">Shaman King</option>
+		<option value="antique salesman">Antique Salesman</option>
+		<option value="professional yugioh player" title="nerd">Professional Yugioh Player</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>How would you rate the presidency of Abraham Lincoln on a scale of 1 to 45?</label>
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">1
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">2
+            </label>
+	    <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">3
+            </label>
+            <label for="recommed-3" title="Listen, if you think I'm making 45 radio buttons you're nuts.">
+                <input type="radio" id="recommed-45" name="recommed">45
+            </label>
+        </div>
+        <div class="form-control">
+            <label>Countries You Wish Lincoln Had Conquered
+                <small>(Check all that apply)</small>
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Mexico
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Canada
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Switzerland
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Japan
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Kiribati
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Uzbekistan
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Narnia
+            </label>
+            <label for="inp-8">
+                <input type="checkbox" name="inp">South Baltaria
+            </label>
+            <label for="inp-9" title="Our Glorious Republic">
+                <input type="checkbox" name="inp">Texas
+            </label>
+            <label for="inp-10">
+                <input type="checkbox" name="inp">Perth Amboy
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">Any comments or suggestions</label>
+            <textarea name="comment" style="height:58px" id="comment" placeholder="Enter your comment here, as if I care. Your uneducated opinion of our great president means NOTHING before the MIGHT OF SLIFER THE SKY DRAGON."></textarea>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" style="color:white;" value="submit">Cast Your Last Pathetic Vote</button>
+    </form>
+</body>
+</html>
