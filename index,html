@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="dvd-player.png">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* Header */
+header {
+  padding: 15px;
+  text-align: center;
+  background: #222222;
+  color: white;
+}
+
+/* Top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #000;
+}
+
+/* Navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 3px 6px 5px grey inset;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: -3px 6px 5px grey inset;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Footer */
+footer {
+  padding: 5px;
+  text-align: left;
+  background: #000;
+  color: white;
+  font-size: 7px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .container, .navbar {   
+    flex-direction: column;
+  }
+}
+.gallery {
+     display: grid;
+     grid-template-columns: repeat(4, minmax(250px, 1fr));
+     gap: 10px;
+     padding: 20px;
+     background-color: rgba(50, 50, 50, 0);
+    
+ }
+ .gallery-item {
+     color: #000000;
+     border: 2px solid black;
+     max-height: 250px;
+     width: 100%
+     height: 50%
+     overflow: hidden;
+     box-shadow: 0px 3px 3px;
+     font-family: "Courier New", Courier, monospace;
+ }
+ .gallery-item img {
+     width: 100%;
+     height: auto;
+     max-height: 70%;
+     display: block;
+     clip-path: content-box;
+     overflow: hidden;
+ }
+</style>
+</head>
+<body>
+
+<!-- Note 
+<div style="background:yellow;padding:5px;text-align:center;">
+  <h4>Resize the browser window to see the responsive effect.</h4>
+</div> -->
+
+<!-- Header -->
+<header>
+  <h1>The Portfolio</h1>
+  <p>by Caleb Shimomura</p>
+</header>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="#">Projects</a>
+  <a href="/Week 11/resume.pdf">Resume</a>
+</div>
+
+<!-- Content Container -->
+<div class="container">
+  <div class="side">
+    <h2>About Me</h2>
+    <img src="/Images/picture.jpg" alt="portrait" style="width:100%">
+    <p>My name is Caleb Shimomura. I have experience all across retail, from working in a warehouse receiving containers from the dock to managing a small business to building programs to help people work smarter, not harder.</p>
+    <!-- <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+    -->
+  </div>
+  <div class="main">
+    <h1>Projects</h1>
+    <!-- Image Gallery section all images in one div -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="Week 2/index.htm">
+              <img src= "/Images/pic1.jpg" alt="Image 1">
+              <p style="padding-left: 7%;">1. A Tribute Page</p>
+            </a>  
+        </div>
+        <div class="gallery-item">
+            <a href="Week 3/index.htm">
+              <img src= "/Images/pic2.jpg" alt="Image 2">
+              <p style="padding-left: 7%;">2. Webpage Including Form</p>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Week 4/Parallax website/index.htm">
+              <img src= "/Images/pic3.jpg" alt="Image 3">
+              <p style="padding-left: 7%;">3. Parallax Website</p>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Week 9/index.htm">
+              <img src= "/Images/pic4.jpg" alt="Image 4">
+              <p style="padding-left: 7%;">4. Landing Page</p>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Week 5/Restaurant Website/index.htm">
+              <img src= "/Images/pic5.jpg" alt="Image 5">
+              <p style="padding-left: 7%;">5. Restaurant Webstore</p>
+            </a>
+        </div>
+        <div class="gallery-item"> 
+            <a href="Week 6/Event Page/index.htm">
+              <img src= "/Images/pic6.jpg" alt="Image 6">
+              <p style="padding-left: 7%;">6. An Event or Conference Webpage</p>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Week 6/Music Store/index.htm">
+              <img src= "/Images/pic7.jpg" alt="Image 7">
+              <p style="padding-left: 7%;">7. Music Store Page</p>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Week 10/index.htm">
+              <img src= "/Images/pic8.jpg" alt="Image 8">
+              <p style="padding-left: 7%;">8. Code Documentation Page</p>
+            </a>
+        </div>
+     </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <h2>by Caleb Shimomura. All rights reserved.</h2>
+</footer>
+
+</body>
+</html>
+
+<!--#crumbs=
+<div id='breadcrumb'>
+<ul>
+<li><a href='/default.asp'>Home</a></li>
+<li><a href='/css/default.asp'>CSS</a></li>
+<li><a href='/css/css3_mediaqueries_ex.asp'>CSS MQ Examples</a></li>
+<li>Tryit: Example of using media queries</li>
+</ul>
+</div>
+-->
